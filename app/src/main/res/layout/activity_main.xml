@@ -5,4 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="369dp"
+        android:layout_height="323dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="411dp"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:text="Welcome to the Deer Grove Forest Preserves App"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/navigationInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Use the tabs at the top of the screen to navigate throughout the app."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.496" />
+</androidx.constraintlayout.widget.ConstraintLayout>
